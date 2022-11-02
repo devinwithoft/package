@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi' crossorigin='anonymous'>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body class="container-fluid bg-hero">
+    <!-- SECTION FILTER PART -->
+    <section class="row justify-content-center">
+        <div class="col-8 card text-center">
+            <section class="row justify-content-center align-items-center">
+                <div class="col-3">
+                    <h3>Filter:</h3>
+                </div>
+                <div class="col-2">
+                    <div class="btn" onclick="filterHeavy()">
+                        <h3>Heavy</h3>
+                    </div>
+
+                </div>
+                <div class="col-2">
+                    <div class="btn">
+                        <h3 class="dropdown">Priority <div class="dropdown-content">
+                                <p onclick="filterPriority('express')">Express</p>
+                                <p onclick="filterPriority('standard')">Standard</p>
+                                <p onclick="filterPriority('free')">Free</p>
+                            </div>
+                        </h3>
+
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="btn" onclick="filterFragile()">
+                        <h3>Fragile</h3>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="btn" onclick="drawallPackages()">
+                        <h3>See All</h3>
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <h2>PACKAGES</h2>
+                </div>
+                <div id="taggedp"></div>
+            </section>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>
